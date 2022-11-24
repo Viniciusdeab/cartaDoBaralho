@@ -10,3 +10,10 @@ async function tirarUmaCarta(deck_id){
     return await reposta.json(url);
 }
 
+async function tirarUmaCartaAleatoriaDoBaralho(){
+    const baralho = await criarBaralhoEmbaralhado();
+    const carta = await tirarUmaCarta(baralho.deck_id);
+    console.log(carta);
+}
+
+tirarUmaCartaAleatoriaDoBaralho();
