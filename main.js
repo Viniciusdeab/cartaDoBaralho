@@ -13,7 +13,8 @@ async function tirarUmaCarta(deck_id){
 async function tirarUmaCartaAleatoriaDoBaralho(){
     const baralho = await criarBaralhoEmbaralhado();
     const carta = await tirarUmaCarta(baralho.deck_id);
-    console.log(carta);
+    const image = carta.cards[0].image;
+    document.getElementById('carta').src = image; 
 }
 
 tirarUmaCartaAleatoriaDoBaralho();
