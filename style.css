@@ -6,10 +6,12 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: green;
 }
 
 h1{
     text-align: center;
+    color: white;
 }
 
 figure{
@@ -22,7 +24,16 @@ figure{
 figcaption{
     font-size: 2rem;
     padding: 1rem;
+    color: white;
 }
+
+img{
+    background-color: darkred;
+    width: 30vw;
+    height: 45vh;
+    border-radius: 10px;
+}
+
 
 button{
     display: flex;
