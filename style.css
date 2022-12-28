@@ -49,5 +49,6 @@ button{
 
 button:hover{
     background: red;
-    transform: scale(1.5);
+    transform: scale(1.2);
+    color: white;
 }
