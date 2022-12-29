@@ -29,9 +29,13 @@ figcaption{
 
 img{
     background-color: darkred;
-    width: 15vw;
-    height: 45vh;
     border-radius: 10px;
+    width: 226px;
+    height: 314px;
+    box-shadow: red 0px 0px 0px 2px inset, rgb(255, 255, 255) 5px 5px 0px -3px,darkred 5px 5px, 
+                rgb(255, 255, 255) 10px 10px 0px -3px,darkred 10px 10px, 
+                rgb(255, 255, 255) 15px 15px 0px -3px,darkred 15px 15px,
+                rgb(255, 255, 255) 20px 20px 0px -3px,darkred 20px 20px;
 }
 
 
