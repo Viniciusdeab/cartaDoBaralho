@@ -5,9 +5,16 @@ tirarCarta.addEventListener("click", ()=>{
     tirarUmaCartaAleatoriaDoBaralho();
 });
 
+document.onkeydown = function(e){
+    if(e.code === 'Enter'|| e.code === "Space"){
+    tirarCarta.classList.add('active');
+    }
+}
 
-
-
+document.onkeyup = function(e){
+    tirarCarta.classList.remove('active');
+    tirarUmaCartaAleatoriaDoBaralho();    
+}
 
 async function criarBaralhoEmbaralhado(){
     const url = "https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1";
