@@ -1,6 +1,13 @@
-document.getElementById('tirar-carta').addEventListener('click', ()=>{
+const tirarCarta = document.getElementById('tirar-carta');
+
+
+tirarCarta.addEventListener("click", ()=>{
     tirarUmaCartaAleatoriaDoBaralho();
-})
+});
+
+
+
+
 
 async function criarBaralhoEmbaralhado(){
     const url = "https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1";
